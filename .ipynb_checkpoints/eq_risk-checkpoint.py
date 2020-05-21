@@ -2,7 +2,7 @@
 # and prompts the user to enter the lat-long coordinates of a house for which
 # to determine the historical earthquake risk
 
-import pandas as pd
+import pandas
 import numpy as np
 import matplotlib.pyplot as plt
 import math
