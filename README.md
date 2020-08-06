@@ -1,7 +1,7 @@
-# Earthqake Risk Assessment
+# Earthqake Viewer and Risk Assessment
 
 ### Problem Statement
-Earthquakes are a part of life in southern California. They don't happen every day, but if you've lived in the area for long enough then chances are you've experienced at least one. There is no valid method for predicting when and where earthquakes will occur and almost certainly never will be, however it is possible to look at the historical earthquake record and evaluate spatial and temporal trends and use these to estimate risk.
+Earthquakes are a part of life in southern California. It may never be possible to predict when and where earthquakes will occur, but the historical earthquake record can be used to estimate earthquake risk within a region. By looking at spatial and temporal trends in the greater Los Angeles area it is possible to see some clear patterns in earthquake distribution. These observations are useful in assessing the earthquake risk in a given location.
 
 ### Data
 The data comes from the USGS database and includes 44,430 earthquakes from the Los Angeles region over the time interval from January 1, 1950 to January 29, 2020.  The main attributes used in this model are the latitude, longitude, magnitude, and depth.  The map below shows all of the earthquakes in the region and time range.
@@ -40,5 +40,23 @@ This plot shows the depth of the earthquakes in the region of interest, south is
 
 Future versions will incorporate a Google Maps address search so the user does not need to know the exact latitude and longitude of their location of interest.  The user will also be able to specify the radius around that location they would like to see data from.
 
-### Risk Assessment
-This portion is still being worked on
+## EQ_swarm
+
+- number
+- mean/stddev year (histogram)
+- mean/stddev mag
+- 3D depth map of swarms, 
+- mean/stddev depth
+
+
+
+## EQ_zones
+
+- high density dbscan
+- 3D depth, colored by age, size by mag
+- Cycles?
+
+
+## Synthesis
+
+- when user inputs location, tell closest major earthquake zone and closest most recent swarm
